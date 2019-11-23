@@ -2,6 +2,7 @@
 
 namespace examples;
 use src\Models\User;
+use src\Connect;
 
 require '../src/Config.php';
 include '../src/Connect.php';
@@ -42,10 +43,11 @@ include '../src/Models/User.php';
 **/
 
 // $user = new User();
-// $user->first_name = 'Walter';
-// $user->last_name = 'Casagrande';
+// $user->first_name = 'Luiz';
+// $user->last_name = 'Felipe';
 // $user->genre = 'm';
 // var_dump($user->save());
+// var_dump($user->fail());
 
 /**
 * UPDATE
