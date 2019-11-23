@@ -1,5 +1,7 @@
 <?php
 
+/** MySQL BD **/
+
 define('INFO_BD', [
 	'driver' => 'mysql',
 	'host' => 'localhost',
