@@ -41,11 +41,25 @@ include '../src/Models/User.php';
 /**
 * CREATE
 **/
-
+// SET PROPERTIES VALUES 
 // $user = new User();
-// $user->first_name = 'Luiz';
-// $user->last_name = 'Felipe';
-// $user->genre = 'm';
+// $user->first_name = 'Patrícia';
+// $user->last_name = 'Amorim';
+// $user->genre = 'f';
+// var_dump($user);
+// var_dump($user->save());
+// var_dump($user->fail());
+
+// SET ARRAY DATA 
+// $data = [
+// 'first_name' => 'Diego',
+// 'last_name' => 'Ribas',
+// 'genre' => 'm',
+// ];
+
+// $user->data = $data;
+
+// var_dump($user);
 // var_dump($user->save());
 // var_dump($user->fail());
 
@@ -53,14 +67,28 @@ include '../src/Models/User.php';
 * UPDATE
 **/
 
-// $user = (new User)->findById(19);
+// $user = (new User)->findById(6);
 // var_dump($user);
-// $user->first_name = 'Diego';
+// $user->first_name = 'Diogo';
 // var_dump($user->save());
+
+// SET ARRAY DATA 
+// $data = [
+// 'id' => $user->id,	
+// 'first_name' => 'Diego',
+// 'last_name' => 'Ribas',
+// 'genre' => 'm',
+// ];
+
+// var_dump($user);
+// $user->data = $data;
+// var_dump($user);
+// var_dump($user->save());
+
 
 /**
 * DELETE
 **/
 
-// $user = (new User)->findById(20);
+// $user = (new User)->findById(7);
 // var_dump($user->destroy());

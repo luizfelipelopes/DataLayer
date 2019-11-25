@@ -6,7 +6,7 @@ define('INFO_BD', [
 	'driver' => 'mysql',
 	'host' => 'localhost',
 	'port' => '3306',
-	'dbname' => 'test',
+	'dbname' => 'datalayer',
 	'user' => 'root',
 	'pass' => '',
 	'attributes' => [

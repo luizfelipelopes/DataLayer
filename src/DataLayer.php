@@ -107,13 +107,23 @@ abstract class DataLayer
 	public function __set($name, $value)
 	{
 
+		if(is_array($value)){
+			
+			$this->data = (object)$value;			
+
+		}
+		
 		if(empty($this->data)){
 
 			$this->data = new stdClass();
 
 		}
 
-		$this->data->$name = $value;
+		if(!is_array($value)){
+
+			$this->data->$name = $value;
+
+		}
 
 	}
 
