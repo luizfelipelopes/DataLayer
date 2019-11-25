@@ -112,7 +112,7 @@ abstract class DataLayer
 			$this->data = (object)$value;			
 
 		}
-		
+
 		if(empty($this->data)){
 
 			$this->data = new stdClass();
@@ -379,7 +379,7 @@ abstract class DataLayer
 
 			$id = $this->data->$primary;
 
-			return $this->update($this->safe((array)$this->data), $this->primary . " = :id", "id={$id}");	
+			return $this->update($this->safe((array) $this->data), $this->primary . " = :id", "id={$id}");	
 
 		}
 
